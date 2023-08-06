@@ -39,11 +39,10 @@ jobs:
 
       # 上传文件
       - name: Deploy
-        run : ./commit.bat
-        # uses: peaceiris/actions-gh-pages@v3 # 一个自动发布github pages的action
-        # with:
-        #   external_repository: Azumic/blog-comic_pic # 发布到哪个repo
-        #   personal_token: xxxx # 发布到其他repo需要提供上面生成的personal access token
-        #   publish_dir: ./public # 注意这里指的是要发布哪个文件夹的内容，而不是指发布到目的仓库的什么位置，因为hugo默认生成静态网页到public文件夹，所以这里发布public文件夹里的内容
-        #   publish_branch: master # 发布到哪个branch
-
+        run : |
+          git init
+          git config --global user.name '${{ secrets.GITHUBUSERNAME }}'
+          git config --global user.email '${{ secrets.GITHUBEMAIL }}'
+          git add .
+          git commit -m "${{ github.event.head_commit.message }} $(date +"%Z %Y-%m-%d %A %H:%M:%S") Updated By Github Actions"
+          git push origin main
