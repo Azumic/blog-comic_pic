@@ -1,0 +1,25 @@
+{
+  "name": "azumic-blog-comic_pic",
+  "version": "1.0.0",
+  "description": "静态资源仓库",
+  "main": "1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Azumic/blog-comic_pic.git"
+  },
+  "keywords": [
+    "图床"
+  ],
+  "author": "azumic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Azumic/blog-comic_pic/issues"
+  },
+  "homepage": "https://github.com/Azumic/blog-comic_pic#readme",
+  "dependencies": {
+    "image-size": "^1.0.2"
+  }
+}

@@ -1,0 +1,103 @@
+# name: 自动更新图片数据
+# on:
+#   push:
+#     paths:
+#       - 'data/comic_detail_ori.json' # 指定要监听的文件路径
+#   workflow_dispatch: # 手动运行工作流程
+
+# jobs:
+#   check_file_update:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Check if file is updated
+#         id: file_update
+#         run: |
+#           if [[ $(git diff HEAD~1 --name-only 'data/comic_detail_ori.json') ]]; then
+#             echo "::set-output name=updated::true"
+#           else
+#             echo "::set-output name=updated::false"
+#           fi
+
+#       - name: Perform action on file update
+#         if: steps.file_update.outputs.updated == 'true'
+#         run: |
+#           # 执行您希望在文件更新时进行的操作
+#           echo "File has been updated"
+
+#       # 拉取当前github文件
+#       - name: 拉取文件
+#         uses: actions/checkout@v2
+#         with:
+#           path: |
+#             comic
+#             data
+#             script
+#             package.json
+
+#           # path-ignore:
+#           #   - dist
+#           #   - node_modules
+#       # 配置node环境
+#       - name: 配置node环境
+#         uses: actions/setup-node@v1
+#         with:
+#           node-version: 14.x
+      
+#       - name: 安装依赖包
+#         run: npm install
+
+#       # 配置环境变量给js读取，执行js文件
+#       - name: 运行任务
+#         run: node script/update_comic_img_size.js  
+    
+#       - name: 上传文件
+#         uses: actions/upload-artifact@v2
+#         with:
+#           name: comic_detail
+#           path: data/comic_detail.json
+      
+
+
+name: 自动更新图片数据
+on:
+  push:
+    paths:
+      - 'data/comic_detail_ori.json' # 指定要监听的文件路径
+  workflow_dispatch: # 手动运行工作流程
+
+jobs:
+  check_file_update:
+    runs-on: ubuntu-latest
+    steps:
+      # 拉取当前github文件
+      - name: 拉取文件
+        uses: actions/checkout@v2
+
+      - name: 打印文件列表
+        run: ls -R
+      
+      # 配置node环境
+      - name: 配置node环境
+        uses: actions/setup-node@v1
+        with:
+          node-version: "18.16.0"
+
+      - name: 安装依赖包
+        run: |
+          npm install
+          npm list 
+
+      # 配置环境变量给js读取，执行js文件
+      - name: 运行任务
+        run: |
+          node script/update_comic_img_size.js
+          node script/read_comic_content.js
+
+      # 上传文件到指定路径
+      - name: Deploy
+          uses: peaceiris/actions-gh-pages@v3 # 一个自动发布github pages的action
+          with:
+            external_repository: Azumic/blog-comic_pic # 发布到哪个repo
+            personal_token: '${{ secrets.GITHUBTOKEN }}' # 发布到其他repo需要提供上面生成的personal access token
+            publish_dir: ./data # 注意这里指的是要发布哪个文件夹的内容，而不是指发布到目的仓库的什么位置，因为hugo默认生成静态网页到public文件夹，所以这里发布public文件夹里的内容
+            publish_branch: main # 发布到哪个branch
