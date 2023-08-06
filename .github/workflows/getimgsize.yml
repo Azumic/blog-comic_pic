@@ -46,3 +46,5 @@ jobs:
           git add .
           git commit -m "${{ github.event.head_commit.message }} $(date +"%Z %Y-%m-%d %A %H:%M:%S") Updated By Github Actions"
           git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
