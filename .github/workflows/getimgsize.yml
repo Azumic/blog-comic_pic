@@ -1,8 +1,8 @@
 name: 自动更新图片数据
 on:
   push:
-    paths:
-      - 'data/comic_detail_ori.json' # 指定要监听的文件路径
+    # paths:
+    #   - 'data/comic_detail_ori.json' # 指定要监听的文件路径
   workflow_dispatch: # 手动运行工作流程
 
 jobs:
