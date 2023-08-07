@@ -40,16 +40,26 @@ jobs:
           echo "GITHUBTOKEN: ${{ secrets.GITHUBTOKEN }}"
           echo "GITHUBTOKEN2: ${{ secrets.GITHUBTOKEN2 }}"
     
-      # 上传文件
-      - name: Deploy
-        run : |
-          git add .
-          git config user.name 'Azumic'
-          git config user.email '775300932@qq.com'
-          echo "---------------------------------------------------"
-          git config -l
-          git commit -m "${{ github.event.head_commit.message }} $(date +"%Z %Y-%m-%d %A %H:%M:%S") Updated By Github Actions"
-          git push --force --quiet "https://Azumic:${{ secrets.GITHUBTOKEN }}@github.com/Azumic/blog-comic_pic.git" main
+      # # 上传文件
+      # - name: Deploy
+      #   run : |
+      #     git add .
+      #     git config user.name 'Azumic'
+      #     git config user.email '775300932@qq.com'
+      #     echo "---------------------------------------------------"
+      #     git config -l
+      #     git commit -m "${{ github.event.head_commit.message }} $(date +"%Z %Y-%m-%d %A %H:%M:%S") Updated By Github Actions"
+      #     git push --force --quiet "https://Azumic:${{ secrets.GITHUBTOKEN }}@github.com/Azumic/blog-comic_pic.git" main     
+      
+      - name: Commit files
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -m "Add changes" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUBTOKEN }}
 
       # # 对比文件
       # - name: 对比文件
