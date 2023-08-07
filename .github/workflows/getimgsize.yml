@@ -44,8 +44,8 @@ jobs:
       - name: Deploy
         run : |
           git add .
-          git config --global user.name '${{ secrets.GITHUBUSERNAME }}'
-          git config --global user.email '${{ secrets.GITHUBEMAIL }}'
+          git config --global user.name 'Azumic'
+          git config --global user.email '775300932@qq.com'
           echo "---------------------------------------------------"
           git config -l
           git commit -m "${{ github.event.head_commit.message }} $(date +"%Z %Y-%m-%d %A %H:%M:%S") Updated By Github Actions"
