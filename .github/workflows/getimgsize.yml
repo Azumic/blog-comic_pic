@@ -32,15 +32,23 @@ jobs:
         run: |
           node script/update_comic_img_size.js
           node script/read_comic_content.js
+          
+      - name: Print Variables
+        run: |
+          echo "GITHUBUSERNAME: ${{ secrets.GITHUBUSERNAME }}"
+          echo "GITHUBEMAIL: ${{ secrets.GITHUBEMAIL }}"
+          echo "GITHUBTOKEN: ${{ secrets.GITHUBTOKEN }}"
+          echo "GITHUBTOKEN2: ${{ secrets.GITHUBTOKEN2 }}"
 
-      # 上传文件
-      - name: Deploy
-        run : |
-          git config --global user.name '${{ secrets.GITHUBUSERNAME }}'
-          git config --global user.email '${{ secrets.GITHUBUSERNAME }}'
-          git add .
-          git commit -m "${{ github.event.head_commit.message }} $(date +"%Z %Y-%m-%d %A %H:%M:%S") Updated By Github Actions"
-          git push --force --quiet "https://${{ secrets.GITHUBUSERNAME }}:${{ secrets.GITHUBTOKEN }}@github.com/Azumic/blog-comic_pic.git" main
+
+      # # 上传文件
+      # - name: Deploy
+      #   run : |
+      #     git config --global user.name '${{ secrets.GITHUBUSERNAME }}'
+      #     git config --global user.email '${{ secrets.GITHUBUSERNAME }}'
+      #     git add .
+      #     git commit -m "${{ github.event.head_commit.message }} $(date +"%Z %Y-%m-%d %A %H:%M:%S") Updated By Github Actions"
+      #     git push --force --quiet "https://${{ secrets.GITHUBUSERNAME }}:${{ secrets.GITHUBTOKEN }}@github.com/Azumic/blog-comic_pic.git" main
 
       # # 对比文件
       # - name: 对比文件
