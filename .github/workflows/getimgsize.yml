@@ -49,7 +49,7 @@ jobs:
           echo "---------------------------------------------------"
           git config -l
           git commit -m "${{ github.event.head_commit.message }} $(date +"%Z %Y-%m-%d %A %H:%M:%S") Updated By Github Actions"
-          git push --force --quiet "https://${{ secrets.GITHUBUSERNAME }}:${{ secrets.GITHUBTOKEN }}@github.com/Azumic/blog-comic_pic.git" main
+          git push --force --quiet "https://Azumic:${{ secrets.GITHUBTOKEN }}@github.com/Azumic/blog-comic_pic.git" main
 
       # # 对比文件
       # - name: 对比文件
