@@ -1,8 +1,8 @@
 name: 自动更新图片数据
 on:
-  # push:
-    # paths:
-    #   - 'data/comic_detail_ori.json' # 指定要监听的文件路径
+  push:
+    paths:
+      - 'data/comic_detail_ori.json' # 指定要监听的文件路径
   workflow_dispatch: # 手动运行工作流程
 
 jobs:
@@ -32,13 +32,50 @@ jobs:
         run: |
           node script/update_comic_img_size.js
           node script/read_comic_content.js
+          
+      - name: Print Variables
+        run: |
+          echo "GITHUBUSERNAME: ${{ secrets.GITHUBUSERNAME }}"
+          echo "GITHUBEMAIL: ${{ secrets.GITHUBEMAIL }}"
+          echo "GITHUBTOKEN: ${{ secrets.GITHUBTOKEN }}"
+          echo "GITHUBTOKEN2: ${{ secrets.GITHUBTOKEN2 }}"
+    
+      # # 上传文件
+      # - name: Deploy
+      #   run : |
+      #     git add .
+      #     git config user.name 'Azumic'
+      #     git config user.email '775300932@qq.com'
+      #     echo "---------------------------------------------------"
+      #     git config -l
+      #     git commit -m "${{ github.event.head_commit.message }} $(date +"%Z %Y-%m-%d %A %H:%M:%S") Updated By Github Actions"
+      #     git push --force --quiet "https://Azumic:${{ secrets.GITHUBTOKEN }}@github.com/Azumic/blog-comic_pic.git" main     
+      
+      - name: Commit files
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -m "Add changes" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUBTOKEN }}
 
-      # 上传文件
-      - name: Deploy
-        run : |
-          git init
-          git config --global user.name '${{ secrets.GITHUBUSERNAME }}'
-          git config --global user.email '${{ secrets.GITHUBEMAIL }}'
-          git add .
-          git commit -m "${{ github.event.head_commit.message }} $(date +"%Z %Y-%m-%d %A %H:%M:%S") Updated By Github Actions"
-          git push "https://${{ secrets.GITHUBUSERNAME }}:${{ secrets.GITHUBTOKEN }}@github.com/${{ secrets.GITHUBUSERNAME }}/blog-comic_pic.git" master:main
+      # # 对比文件
+      # - name: 对比文件
+      #   id: 'commit'
+      #   run: |
+      #     git config --global user.name '${{ secrets.GITHUBUSERNAME }}'
+      #     git config --global user.email '${{ secrets.GITHUBEMAIL }}'
+      #     git add .
+      #     git diff --quiet && git diff --staged --quiet || git commit -am 'Update'
+      #     echo ::set-output name=status::success
+
+      # # 上传文件
+      # - name: 上传文件
+      #   if: steps.commit.output.status != 'success'
+      #   uses: ad-m/github-push-action@master
+      #   with:
+      #     github_token: ${{ secrets.GITHUBTOKEN2 }}
+      #     branch: main
+  
