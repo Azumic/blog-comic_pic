@@ -48,7 +48,7 @@ jobs:
           git config user.email '775300932@qq.com'
           echo "---------------------------------------------------"
           git config -l
-          git commit -m "${{ github.event.head_commit.message }} $(date +"%Z %Y-%m-%d %A %H:%M:%S") Updated By Github Actions" -c 'Azumic <775300932@qq.com>'
+          git commit -m "${{ github.event.head_commit.message }} $(date +"%Z %Y-%m-%d %A %H:%M:%S") Updated By Github Actions"
           git push --force --quiet "https://Azumic:${{ secrets.GITHUBTOKEN }}@github.com/Azumic/blog-comic_pic.git" main
 
       # # 对比文件
