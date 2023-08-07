@@ -33,31 +33,31 @@ jobs:
           node script/update_comic_img_size.js
           node script/read_comic_content.js
 
-      # # 上传文件
-      # - name: Deploy
-      #   run : |
-      #     git init
-      #     git config --global user.name '${{ secrets.GITHUBUSERNAME }}'
-      #     git config --global user.email '${{ secrets.GITHUBUSERNAME }}'
-      #     git add .
-      #     git commit -m "${{ github.event.head_commit.message }} $(date +"%Z %Y-%m-%d %A %H:%M:%S") Updated By Github Actions"
-      #     git push "https://${{ secrets.GITHUBUSERNAME }}:${{ secrets.GITHUBTOKEN }}@github.com/${{ secrets.GITHUBUSERNAME }}/blog-comic_pic.git" master:main
-
-      # 对比文件
-      - name: 对比文件
-        id: 'commit'
-        run: |
-          git config --global user.name '${{ secrets.GITHUBUSERNAME }}'
-          git config --global user.email '${{ secrets.GITHUBEMAIL }}'
-          git add .
-          git diff --quiet && git diff --staged --quiet || git commit -am 'Update'
-          echo ::set-output name=status::success
-
       # 上传文件
-      - name: 上传文件
-        if: steps.commit.output.status != 'success'
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUBTOKEN2 }}
-          branch: main
+      - name: Deploy
+        run : |
+          git init
+          git config --global user.name '${{ secrets.GITHUBUSERNAME }}'
+          git config --global user.email '${{ secrets.GITHUBUSERNAME }}'
+          git add .
+          git commit -m "${{ github.event.head_commit.message }} $(date +"%Z %Y-%m-%d %A %H:%M:%S") Updated By Github Actions"
+          git push "https://${{ secrets.GITHUBUSERNAME }}:${{ secrets.GITHUBTOKEN }}@github.com/${{ secrets.GITHUBUSERNAME }}/blog-comic_pic.git" master:main
+
+      # # 对比文件
+      # - name: 对比文件
+      #   id: 'commit'
+      #   run: |
+      #     git config --global user.name '${{ secrets.GITHUBUSERNAME }}'
+      #     git config --global user.email '${{ secrets.GITHUBEMAIL }}'
+      #     git add .
+      #     git diff --quiet && git diff --staged --quiet || git commit -am 'Update'
+      #     echo ::set-output name=status::success
+
+      # # 上传文件
+      # - name: 上传文件
+      #   if: steps.commit.output.status != 'success'
+      #   uses: ad-m/github-push-action@master
+      #   with:
+      #     github_token: ${{ secrets.GITHUBTOKEN2 }}
+      #     branch: main
   
