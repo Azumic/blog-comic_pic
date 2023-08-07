@@ -36,7 +36,7 @@ jobs:
       # 上传文件
       - name: Deploy
         run : |
-          git init
+          # git init
           git config --global user.name '${{ secrets.GITHUBUSERNAME }}'
           git config --global user.email '${{ secrets.GITHUBUSERNAME }}'
           git add .
