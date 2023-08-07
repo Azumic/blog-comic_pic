@@ -58,6 +58,6 @@ jobs:
         if: steps.commit.output.status != 'success'
         uses: ad-m/github-push-action@v0.6.0
         with:
-          github_token: ${{ secrets.GITHUBTOKEN }}
+          github_token: ${{ secrets.GITHUBTOKEN2 }}
           branch: main
   
