@@ -38,7 +38,7 @@ async function readImgSize(data) {
 
     });
 
-    fs.writeFile(detail_file, JSON.stringify(oldData), (err) => {
+    fs.writeFile(detail_file, JSON.stringify(oldData, null, "\t"), (err) => {
         if (err) {
             console.error('写入文件失败：', err);
             return;
