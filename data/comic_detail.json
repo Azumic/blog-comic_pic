@@ -354,18 +354,26 @@
 		"imglist": [
 			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/__yoroizuka_mizore_kasaki_nozomi_nakagawa_natsuki_yoshikawa_yuuko_and_nakaseko_kaori_hibike_euphonium__sample-6d1baa3c01390030bf5a0d7c1efa13f8.webp",
 			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/8be77f9da9c9aaa8875ba9c6d4eb9014f28f8542.webp",
-			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/f909dcd7b46786770229ffe58b7f7da04387c63e.webp"
+			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/f909dcd7b46786770229ffe58b7f7da04387c63e.webp",
+			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/101347019_p7.webp",
+			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/50671628_p0.webp",
+			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/107637438_p0.webp"
 		],
 		"img_source": [
 			"https://danbooru.donmai.us/posts/5525227",
 			"https://anime-eupho.com/",
-			"https://anime-eupho.com/"
+			"https://anime-eupho.com/",
+			"",
+			"",
+			""
 		],
-		"audio": "/music/?id=75367869&server=netease",
 		"imgwidth": [
 			849,
 			2500,
-			3412
+			3412,
+			3200,
+			1181,
+			1800
 		],
 		"imgInfo": {
 			"0": {
@@ -381,6 +389,21 @@
 			"2": {
 				"height": 2221,
 				"width": 3412,
+				"type": "webp"
+			},
+			"3": {
+				"height": 5504,
+				"width": 3200,
+				"type": "webp"
+			},
+			"4": {
+				"height": 1510,
+				"width": 1181,
+				"type": "webp"
+			},
+			"5": {
+				"height": 3383,
+				"width": 1800,
 				"type": "webp"
 			}
 		}
@@ -390,18 +413,26 @@
 		"imglist": [
 			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/__yoroizuka_mizore_kasaki_nozomi_nakagawa_natsuki_yoshikawa_yuuko_and_nakaseko_kaori_hibike_euphonium__sample-6d1baa3c01390030bf5a0d7c1efa13f8.webp",
 			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/8be77f9da9c9aaa8875ba9c6d4eb9014f28f8542.webp",
-			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/f909dcd7b46786770229ffe58b7f7da04387c63e.webp"
+			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/f909dcd7b46786770229ffe58b7f7da04387c63e.webp",
+			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/101347019_p7.webp",
+			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/50671628_p0.webp",
+			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/107637438_p0.webp"
 		],
 		"img_source": [
 			"https://danbooru.donmai.us/posts/5525227",
 			"https://anime-eupho.com/",
-			"https://anime-eupho.com/"
+			"https://anime-eupho.com/",
+			"",
+			"",
+			""
 		],
-		"audio": "/music/?id=75367869&server=netease",
 		"imgwidth": [
 			849,
 			2500,
-			3412
+			3412,
+			3200,
+			1181,
+			1800
 		],
 		"imgInfo": {
 			"0": {
@@ -417,6 +448,21 @@
 			"2": {
 				"height": 2221,
 				"width": 3412,
+				"type": "webp"
+			},
+			"3": {
+				"height": 5504,
+				"width": 3200,
+				"type": "webp"
+			},
+			"4": {
+				"height": 1510,
+				"width": 1181,
+				"type": "webp"
+			},
+			"5": {
+				"height": 3383,
+				"width": 1800,
 				"type": "webp"
 			}
 		}
@@ -426,18 +472,26 @@
 		"imglist": [
 			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/__yoroizuka_mizore_kasaki_nozomi_nakagawa_natsuki_yoshikawa_yuuko_and_nakaseko_kaori_hibike_euphonium__sample-6d1baa3c01390030bf5a0d7c1efa13f8.webp",
 			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/8be77f9da9c9aaa8875ba9c6d4eb9014f28f8542.webp",
-			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/f909dcd7b46786770229ffe58b7f7da04387c63e.webp"
+			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/f909dcd7b46786770229ffe58b7f7da04387c63e.webp",
+			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/101347019_p7.webp",
+			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/50671628_p0.webp",
+			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/107637438_p0.webp"
 		],
 		"img_source": [
 			"https://danbooru.donmai.us/posts/5525227",
 			"https://anime-eupho.com/",
-			"https://anime-eupho.com/"
+			"https://anime-eupho.com/",
+			"",
+			"",
+			""
 		],
-		"audio": "/music/?id=75367869&server=netease",
 		"imgwidth": [
 			849,
 			2500,
-			3412
+			3412,
+			3200,
+			1181,
+			1800
 		],
 		"imgInfo": {
 			"0": {
@@ -453,6 +507,21 @@
 			"2": {
 				"height": 2221,
 				"width": 3412,
+				"type": "webp"
+			},
+			"3": {
+				"height": 5504,
+				"width": 3200,
+				"type": "webp"
+			},
+			"4": {
+				"height": 1510,
+				"width": 1181,
+				"type": "webp"
+			},
+			"5": {
+				"height": 3383,
+				"width": 1800,
 				"type": "webp"
 			}
 		}
@@ -462,18 +531,26 @@
 		"imglist": [
 			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/__yoroizuka_mizore_kasaki_nozomi_nakagawa_natsuki_yoshikawa_yuuko_and_nakaseko_kaori_hibike_euphonium__sample-6d1baa3c01390030bf5a0d7c1efa13f8.webp",
 			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/8be77f9da9c9aaa8875ba9c6d4eb9014f28f8542.webp",
-			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/f909dcd7b46786770229ffe58b7f7da04387c63e.webp"
+			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/f909dcd7b46786770229ffe58b7f7da04387c63e.webp",
+			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/101347019_p7.webp",
+			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/50671628_p0.webp",
+			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/107637438_p0.webp"
 		],
 		"img_source": [
 			"https://danbooru.donmai.us/posts/5525227",
 			"https://anime-eupho.com/",
-			"https://anime-eupho.com/"
+			"https://anime-eupho.com/",
+			"",
+			"",
+			""
 		],
-		"audio": "/music/?id=75367869&server=netease",
 		"imgwidth": [
 			849,
 			2500,
-			3412
+			3412,
+			3200,
+			1181,
+			1800
 		],
 		"imgInfo": {
 			"0": {
@@ -489,6 +566,21 @@
 			"2": {
 				"height": 2221,
 				"width": 3412,
+				"type": "webp"
+			},
+			"3": {
+				"height": 5504,
+				"width": 3200,
+				"type": "webp"
+			},
+			"4": {
+				"height": 1510,
+				"width": 1181,
+				"type": "webp"
+			},
+			"5": {
+				"height": 3383,
+				"width": 1800,
 				"type": "webp"
 			}
 		}
@@ -646,6 +738,25 @@
 			"8": {
 				"height": 960,
 				"width": 720,
+				"type": "webp"
+			}
+		}
+	},
+	"镇魂街 第三季": {
+		"intordu": "",
+		"imglist": [
+			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/50671628_p0.webp"
+		],
+		"img_source": [
+			""
+		],
+		"imgwidth": [
+			1181
+		],
+		"imgInfo": {
+			"0": {
+				"height": 1510,
+				"width": 1181,
 				"type": "webp"
 			}
 		}
