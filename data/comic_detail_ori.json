@@ -241,9 +241,40 @@
   "镇魂街 第三季": {
     "intordu": "",
     "imglist": [
+      "https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/50671628_p0.webp",
+      "https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/50671628_p0.webp",
+      "https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/50671628_p0.webp",
       "https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/50671628_p0.webp"
     ],
     "img_source": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "某科学的超电磁炮": {
+    "intordu": "B站的镇站之宝，名字来源，确定不来看一下吗~",
+    "imglist": [
+      "https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/cp/74966612_p0.webp",
+      "https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/cp/46230088_p0.webp",
+      "https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/cp/66317278_p0.webp",
+      "https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/cp/103531936_p0.webp",
+      "https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/cp/103531936_p1.webp",
+      "https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/cp/107738043_p0.webp",
+      "https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/cp/84233525_p0.webp",
+      "https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/cp/30055398_p0.webp",
+      "https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/cp/50140780_p0.webp"
+    ],
+    "img_source": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
       ""
     ]
   }
