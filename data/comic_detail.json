@@ -745,18 +745,125 @@
 	"镇魂街 第三季": {
 		"intordu": "",
 		"imglist": [
+			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/50671628_p0.webp",
+			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/50671628_p0.webp",
+			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/50671628_p0.webp",
 			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/jc/50671628_p0.webp"
 		],
 		"img_source": [
+			"",
+			"",
+			"",
 			""
 		],
 		"imgwidth": [
+			1181,
+			1181,
+			1181,
 			1181
 		],
 		"imgInfo": {
 			"0": {
 				"height": 1510,
 				"width": 1181,
+				"type": "webp"
+			},
+			"1": {
+				"height": 1510,
+				"width": 1181,
+				"type": "webp"
+			},
+			"2": {
+				"height": 1510,
+				"width": 1181,
+				"type": "webp"
+			},
+			"3": {
+				"height": 1510,
+				"width": 1181,
+				"type": "webp"
+			}
+		}
+	},
+	"某科学的超电磁炮": {
+		"intordu": "B站的镇站之宝，名字来源，确定不来看一下吗~",
+		"imglist": [
+			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/cp/74966612_p0.webp",
+			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/cp/46230088_p0.webp",
+			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/cp/66317278_p0.webp",
+			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/cp/103531936_p0.webp",
+			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/cp/103531936_p1.webp",
+			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/cp/107738043_p0.webp",
+			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/cp/84233525_p0.webp",
+			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/cp/30055398_p0.webp",
+			"https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/comic/imglist/cp/50140780_p0.webp"
+		],
+		"img_source": [
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			""
+		],
+		"imgwidth": [
+			1200,
+			910,
+			1092,
+			1074,
+			3089,
+			2079,
+			2275,
+			1400,
+			800
+		],
+		"imgInfo": {
+			"0": {
+				"height": 587,
+				"width": 1200,
+				"type": "webp"
+			},
+			"1": {
+				"height": 642,
+				"width": 910,
+				"type": "webp"
+			},
+			"2": {
+				"height": 764,
+				"width": 1092,
+				"type": "webp"
+			},
+			"3": {
+				"height": 1518,
+				"width": 1074,
+				"type": "webp"
+			},
+			"4": {
+				"height": 2184,
+				"width": 3089,
+				"type": "webp"
+			},
+			"5": {
+				"height": 1832,
+				"width": 2079,
+				"type": "webp"
+			},
+			"6": {
+				"height": 3040,
+				"width": 2275,
+				"type": "webp"
+			},
+			"7": {
+				"height": 1000,
+				"width": 1400,
+				"type": "webp"
+			},
+			"8": {
+				"height": 1118,
+				"width": 800,
 				"type": "webp"
 			}
 		}
