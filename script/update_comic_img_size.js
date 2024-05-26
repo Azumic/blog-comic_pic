@@ -3,7 +3,7 @@ const path = require('path');
 const sizeOf = require('image-size');
 
 const pic_path = ""
-const tuchuang_path = "https://cdn.staticaly.com/gh/Azumic/blog-comic_pic@main/"
+const tuchuang_path = "https://jsd.cdn.zzko.cn/gh/Azumic/blog-comic_pic@main/"
 const detail_file_ori = "data/comic_detail_ori.json"
 const detail_file = "data/comic_detail.json"
 

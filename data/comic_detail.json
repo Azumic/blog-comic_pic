@@ -867,5 +867,113 @@
 				"type": "webp"
 			}
 		}
+	},
+	"夜晚的水母不会游泳": {
+		"intordu": "强大,无需多言。啊,最迷住我的是夜老师的声音啊！",
+		"imglist": [
+			"https://jsd.cdn.zzko.cn/gh/Azumic/blog-comic_pic@main/comic/imglist/jelee/夜晚的水母不会游泳第1~3集GIF图片---1.676z3ne4dm00.gif",
+			"https://jsd.cdn.zzko.cn/gh/Azumic/blog-comic_pic@main/comic/imglist/jelee/夜晚的水母不会游泳第1~3集GIF图片---2.16ify0x2xns0.gif",
+			"https://jsd.cdn.zzko.cn/gh/Azumic/blog-comic_pic@main/comic/imglist/jelee/夜晚的水母不会游泳第1~3集GIF图片---3.6lwiiqbhxck0.gif",
+			"https://jsd.cdn.zzko.cn/gh/Azumic/blog-comic_pic@main/comic/imglist/jelee/夜晚的水母不会游泳第1~3集GIF图片---4.4wtin4ofnf60.gif",
+			"https://jsd.cdn.zzko.cn/gh/Azumic/blog-comic_pic@main/comic/imglist/jelee/夜晚的水母不会游泳第1~3集GIF图片---7.litvvlr0ols.gif",
+			"https://jsd.cdn.zzko.cn/gh/Azumic/blog-comic_pic@main/comic/imglist/jelee/夜晚的水母不会游泳第1~3集GIF图片---9.6xkd4zw9r200.gif",
+			"https://jsd.cdn.zzko.cn/gh/Azumic/blog-comic_pic@main/comic/imglist/jelee/夜晚的水母不会游泳第1~3集GIF图片---10.27n3axzpstz4.gif",
+			"https://jsd.cdn.zzko.cn/gh/Azumic/blog-comic_pic@main/comic/imglist/jelee/夜晚的水母不会游泳第1~3集GIF图片---14.57fk3elxc5k0.gif",
+			"https://jsd.cdn.zzko.cn/gh/Azumic/blog-comic_pic@main/comic/imglist/jelee/夜晚的水母不会游泳第1~3集GIF图片---16.3ojdvrg5ryg0.gif",
+			"https://jsd.cdn.zzko.cn/gh/Azumic/blog-comic_pic@main/comic/imglist/jelee/夜晚的水母不会游泳第1~3集GIF图片---18.4yfm1qm2plg.gif",
+			"https://jsd.cdn.zzko.cn/gh/Azumic/blog-comic_pic@main/comic/imglist/jelee/夜晚的水母不会游泳第1~3集GIF图片---19.5l6frzuylcg0.gif",
+			"https://jsd.cdn.zzko.cn/gh/Azumic/blog-comic_pic@main/comic/imglist/jelee/夜晚的水母不会游泳第1~3集GIF图片---21.79uv1evxc400.gif"
+		],
+		"img_source": [
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			""
+		],
+		"imgwidth": [
+			480,
+			360,
+			360,
+			360,
+			320,
+			320,
+			320,
+			280,
+			390,
+			360,
+			260,
+			300
+		],
+		"imgInfo": {
+			"0": {
+				"height": 360,
+				"width": 480,
+				"type": "gif"
+			},
+			"1": {
+				"height": 270,
+				"width": 360,
+				"type": "gif"
+			},
+			"2": {
+				"height": 270,
+				"width": 360,
+				"type": "gif"
+			},
+			"3": {
+				"height": 270,
+				"width": 360,
+				"type": "gif"
+			},
+			"4": {
+				"height": 360,
+				"width": 320,
+				"type": "gif"
+			},
+			"5": {
+				"height": 280,
+				"width": 320,
+				"type": "gif"
+			},
+			"6": {
+				"height": 320,
+				"width": 320,
+				"type": "gif"
+			},
+			"7": {
+				"height": 360,
+				"width": 280,
+				"type": "gif"
+			},
+			"8": {
+				"height": 285,
+				"width": 390,
+				"type": "gif"
+			},
+			"9": {
+				"height": 360,
+				"width": 360,
+				"type": "gif"
+			},
+			"10": {
+				"height": 320,
+				"width": 260,
+				"type": "gif"
+			},
+			"11": {
+				"height": 220,
+				"width": 300,
+				"type": "gif"
+			}
+		}
 	}
 }
