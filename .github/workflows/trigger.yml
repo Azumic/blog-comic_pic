@@ -14,7 +14,7 @@ jobs:
       - name: Trigger another repository
         uses: repo-sync/github-sync@v2
         with:
-          token: ${{ secrets.GITHUBTOKEN }}
+          github_token: ${{ secrets.GITHUBTOKEN }}
         #   repository: <目标仓库所有者>/<目标仓库名称>
           repository: Azumic/Newer-Blog-Backup
           event_type: trigger-action
