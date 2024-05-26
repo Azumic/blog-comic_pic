@@ -1,0 +1,44 @@
+name: Trigger Another Repository
+
+on:
+  push:
+    paths:
+        - 'data/comic_detail.json' # 指定要监听的文件路径
+  workflow_dispatch: # 手动运行工作流程
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger another repository
+        uses: repo-sync/github-sync@v2
+        with:
+          token: ${{ secrets.GITHUBTOKEN }}
+        #   repository: <目标仓库所有者>/<目标仓库名称>
+          repository: Azumic/Newer-Blog-Backup
+          event_type: trigger-action
+
+
+# name: Trigger Another Workflow
+
+# on:
+# #   repository_dispatch:
+# #     types: [trigger-autodeploy]
+#   push:
+#     paths:
+#         - 'data/comic_detail.json' # 指定要监听的文件路径
+#   workflow_dispatch: # 手动运行工作流程
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Trigger autodeploy workflow
+#         run: |
+#           curl -X POST \
+#             -H "Accept: application/vnd.github.everest-preview+json" \
+#             -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+#             https://api.github.com/repos/<目标仓库所有者>/<目标仓库名称>/dispatches \
+#             -d '{"event_type": "autodeploy"}'
